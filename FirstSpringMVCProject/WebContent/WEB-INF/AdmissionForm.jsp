@@ -1,0 +1,65 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>IT Industries</title>
+</head>
+<body>
+
+	<h2>${headerValue}</h2>
+	<form:errors path="studentDetails.*"/>
+	<form method="post" action="/FirstSpringMVCProject/submitForm.html">
+		<table>
+			<tr>
+				<th>Student's Name :</th>
+				<td><input type="text" name="studentName" /></td>
+			</tr>
+
+			<tr>
+				<th>Student's Hobby :</th>
+				<td><input type="text" name="studentHobby"></td>
+			</tr>
+
+			<tr>
+				<th>Student's Mobile :</th>
+				<td><input type="text" name="studentMobile"></td>
+			</tr>
+
+			<tr>
+				<th>Student's DOB :</th>
+				<td><input type="text" name="studentDOB"></td>
+			</tr>
+
+			<tr>
+				<th>Student's Skills :</th>
+				<td><select name="studentSkills" multiple>
+						<option value="Java Core"> Java Core </option>
+						<option value="Spring"> Spring </option>
+						<option value="python"> Python </option>
+						<option value="Algorithm"> Algorithm</option>
+				</select></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>Student's Address</th>
+			</tr>
+			<tr>
+				<td>country: <input type="text" name="studentAddress.country" /></td>
+				<td>city: <input type="text" name="studentAddress.city" /></td>
+				<td>street : <input type="text" name="studentAddress.street" /></td>
+				<td>pincode : <input type="text" name="studentAddress.pincode" /></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="Submit form by clicking"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

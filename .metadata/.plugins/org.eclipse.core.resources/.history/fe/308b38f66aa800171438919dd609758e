@@ -1,0 +1,22 @@
+package org.mihir.controller;
+
+public class Student {
+
+	private String studentName;
+	private String skill;
+	
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	public String getSkill() {
+		return skill;
+	}
+	public void setSkill(String skill) {
+		this.skill = skill;
+	}
+	
+	
+}

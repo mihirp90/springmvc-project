@@ -1,0 +1,5 @@
+package org.mihir.controller;
+
+public class StudentAdmissionController {
+
+}
